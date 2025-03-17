@@ -1,0 +1,6 @@
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: data/certified_public_accountant.jsonl
+task: kmmlu_pro_poc_certified_public_accountant
+include: "_kmmlu_pro_poc_yaml"

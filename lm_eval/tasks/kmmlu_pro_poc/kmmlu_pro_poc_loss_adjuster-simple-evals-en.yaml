@@ -1,0 +1,6 @@
+dataset_kwargs:
+  data_files:
+    test: lm_eval/tasks/kmmlu_pro_poc/data/loss_adjuster.jsonl
+dataset_path: json
+include: _kmmlu_pro_poc_simple-evals_en_yaml
+task: kmmlu_pro_poc_simple-evals_en_loss_adjuster

@@ -1,0 +1,39 @@
+tag:
+    - kmmlu_pro_poc
+test_split: test
+output_type: generate_until
+doc_to_text: !function utils_kmmlu_pro_poc_simple-evals.doc_to_text
+# doc_to_target: solution
+doc_to_target: !function utils_kmmlu_pro_poc_simple-evals.doc_to_target
+filter_list:
+  - name: "strict-match"
+    filter:
+      - function: "regex"
+        regex_pattern: "정답[^A-E]*:[^A-E]*([A-E])"
+        group_select: -1
+      - function: "take_first"
+  # - name: "flexible-extract"
+  #   filter:
+  #     - function: "regex"
+  #       group_select: -1
+  #       regex_pattern: "([1-5])"
+  #     - function: "take_first"
+metric_list:
+  - metric: exact_match
+    aggregation: mean
+    higher_is_better: true
+    ignore_case: true
+    ignore_punctuation: true
+    regexes_to_ignore:
+          - " "
+generation_kwargs:
+  until:
+    #- "Q:"
+    #- "\n\n"
+    - "</s>"
+    #- "."
+    - "<end_of_turn>"
+  do_sample: false
+  temperature: 0.0
+metadata:
+  version: 0.1

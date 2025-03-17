@@ -1,0 +1,25 @@
+group: kmmlu_redux_simple-evals_en
+task:
+  - kmmlu_redux_0_simple-evals_en
+  - kmmlu_redux_1_simple-evals_en
+  - kmmlu_redux_2_simple-evals_en
+  - kmmlu_redux_3_simple-evals_en
+  - kmmlu_redux_4_simple-evals_en
+  - kmmlu_redux_5_simple-evals_en
+  - kmmlu_redux_6_simple-evals_en
+  - kmmlu_redux_7_simple-evals_en
+  - kmmlu_redux_8_simple-evals_en
+  - kmmlu_redux_9_simple-evals_en
+  - kmmlu_redux_10_simple-evals_en
+  - kmmlu_redux_11_simple-evals_en
+  - kmmlu_redux_12_simple-evals_en
+  - kmmlu_redux_13_simple-evals_en
+
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: true # defaults to `true`. Set this to `false` to do a "macro" average (taking each subtask's average accuracy, and summing those accuracies and dividing by 3)--by default we do a "micro" average (retain all subtasks' per-document accuracies, and take the mean over all documents' accuracies to get our aggregate mean).
+    filter_list: strict-match
+metadata:
+  version: 1.0
+

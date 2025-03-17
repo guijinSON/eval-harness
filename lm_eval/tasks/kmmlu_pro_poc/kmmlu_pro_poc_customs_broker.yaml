@@ -1,0 +1,6 @@
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: data/customs_broker.jsonl
+task: kmmlu_pro_poc_customs_broker
+include: "_kmmlu_pro_poc_yaml"

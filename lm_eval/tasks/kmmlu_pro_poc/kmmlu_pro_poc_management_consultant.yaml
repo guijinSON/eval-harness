@@ -1,0 +1,6 @@
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: data/management_consultant.jsonl
+task: kmmlu_pro_poc_management_consultant
+include: "_kmmlu_pro_poc_yaml"

@@ -1,0 +1,6 @@
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: data/patent_attorney.jsonl
+task: kmmlu_pro_poc_patent_attorney
+include: "_kmmlu_pro_poc_yaml"

@@ -1,0 +1,6 @@
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: data/doctor.jsonl
+task: kmmlu_pro_poc_doctor
+include: "_kmmlu_pro_poc_yaml"

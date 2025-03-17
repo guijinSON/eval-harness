@@ -1,0 +1,6 @@
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: data/pharm.jsonl
+task: kmmlu_pro_poc_pharm
+include: "_kmmlu_pro_poc_yaml"

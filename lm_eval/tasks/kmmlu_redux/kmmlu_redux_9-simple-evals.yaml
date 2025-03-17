@@ -1,0 +1,6 @@
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: data/kmmlu_redux_9.jsonl
+task: kmmlu_redux_9_simple-evals
+include: _kmmlu_redux_simple-evals_yaml

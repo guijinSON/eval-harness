@@ -1,0 +1,28 @@
+group: kmmlu_pro_poc
+task:
+  - kmmlu_pro_poc_certified_labor_consultant
+  - kmmlu_pro_poc_certified_public_accountant
+  - kmmlu_pro_poc_loss_adjuster
+  - kmmlu_pro_poc_management_consultant
+  - kmmlu_pro_poc_technical_consultant
+  - kmmlu_pro_poc_appraiser
+  - kmmlu_pro_poc_customs_broker
+  - kmmlu_pro_poc_patent_attorney
+  - kmmlu_pro_poc_tax_accountant
+  - kmmlu_pro_poc_oriental_medicine_doctor
+  - kmmlu_pro_poc_oriental_pharmacist
+  - kmmlu_pro_poc_doctor
+  - kmmlu_pro_poc_dentist
+  - kmmlu_pro_poc_pharm
+  - kmmlu_pro_poc_lawyer
+aggregate_metric_list:
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: true # defaults to `true`. Set this to `false` to do a "macro" average (taking each subtask's average accuracy, and summing those accuracies and dividing by 3)--by default we do a "micro" average (retain all subtasks' per-document accuracies, and take the mean over all documents' accuracies to get our aggregate mean).
+    filter_list: strict-match
+  - metric: exact_match
+    aggregation: mean
+    weight_by_size: true # defaults to `true`. Set this to `false` to do a "macro" average (taking each subtask's average accuracy, and summing those accuracies and dividing by 3)--by default we do a "micro" average (retain all subtasks' per-document accuracies, and take the mean over all documents' accuracies to get our aggregate mean).
+    filter_list: flexible-extract
+metadata:
+  version: 1.0

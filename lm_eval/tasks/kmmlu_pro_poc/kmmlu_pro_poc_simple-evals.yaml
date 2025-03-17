@@ -1,0 +1,23 @@
+aggregate_metric_list:
+- aggregation: mean
+  filter_list: strict-match
+  metric: exact_match
+  weight_by_size: true
+group: kmmlu_pro_poc_simple-evals
+metadata:
+  version: 1.0
+task:
+- kmmlu_pro_poc_simple-evals_certified_labor_consultant
+- kmmlu_pro_poc_simple-evals_certified_public_accountant
+- kmmlu_pro_poc_simple-evals_loss_adjuster
+- kmmlu_pro_poc_simple-evals_appraiser
+- kmmlu_pro_poc_simple-evals_customs_broker
+- kmmlu_pro_poc_simple-evals_patent_attorney
+- kmmlu_pro_poc_simple-evals_tax_accountant
+- kmmlu_pro_poc_simple-evals_oriental_medicine_doctor
+- kmmlu_pro_poc_simple-evals_oriental_pharmacist
+- kmmlu_pro_poc_simple-evals_judicial_scrivener
+- kmmlu_pro_poc_simple-evals_doctor
+- kmmlu_pro_poc_simple-evals_dentist
+- kmmlu_pro_poc_simple-evals_pharm
+- kmmlu_pro_poc_simple-evals_lawyer

@@ -1,0 +1,6 @@
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    test: data/oriental_pharmacist.jsonl
+task: kmmlu_pro_poc_oriental_pharmacist
+include: "_kmmlu_pro_poc_yaml"
