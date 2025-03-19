@@ -32,6 +32,7 @@ generation_kwargs:
     - "</s>"
     #- "."
     - "<end_of_turn>"
+    - "</solution>"
   do_sample: false
   temperature: 0.0
 metadata:
